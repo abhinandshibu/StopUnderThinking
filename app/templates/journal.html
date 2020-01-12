@@ -1,0 +1,79 @@
+{% include "base.html" %}
+{% include "navbar-journal.html" %}
+
+<div>
+
+    <div class="row select-expand" style='display: block;'>
+        <div class="col-8 col-md-4 journal-name-div">
+            <!-- Button for minimising and expanding goes here           -->
+            <div>
+                <button id="minimise-select-button" class="" onclick="minimiseSelect()"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="">
+                <h4 id="journal-name">{{ journal_content[0][1] }}</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="section-selectors" class="col-4 col-md-2 selectors select-expand" style='display: block;'>
+                {% for section in range(journal_content|length - 1) %}
+                    <div class="section-item-container">
+                        <a class="section-item"
+                            href="{{ url_for('journal', journal_id = journal_id, section_number = section + 1, entry_number = 0) }}">
+                            {{ journal_content[section + 1][0][1] }}
+                        </a><br/>
+                    </div>
+                {% endfor %}
+            <form id="new-section-disappear" name="newSectionInput" style='display: none;' action="" method="POST" novalidate>
+                <!-- automatically stops CSRF attacks when combined with the config SECRET_KEY -->
+                {{ form_new_section.hidden_tag() }}
+                {{ form_new_section.section_input(class_='new-section-input', placeholder="my section") }}
+                {{ form_new_section.submit(class_='new-section-submit', id="submit-btn", value="new-section-submit") }}
+            </form>
+            <div id="new-section">
+                <button id="new-section-button" class="" onclick="newSection()"><i class="fas fa-plus"></i></button>
+                <h5 id="new-section-title">Section</h5>
+            </div>
+        </div>
+
+        <div id="entry-selectors" class="col-4 col-md-2 selectors select-expand" style='display: block;'>
+            {% for entry in range(journal_content[section_number]|length - 1) %}
+                <div class="entry-item-container">
+                    <a class="entry-item"
+                        href="{{ url_for('journal', journal_id = journal_id, section_number = section_number, entry_number = entry) }}">
+                        {{ journal_content[section_number][entry + 1][1] }}
+                    </a><br/>
+                </div>
+            {% endfor %}
+            <form id="new-entry-disappear" name="newEntryInput" style='display: none;' action="" method="POST" novalidate>
+                <!-- automatically stops CSRF attacks when combined with the config SECRET_KEY -->
+                {{ form_new_entry.hidden_tag() }}
+                {{ form_new_entry.entry_input(class_='new-entry-input', placeholder="my page") }}
+                {{ form_new_entry.submit(class_='new-entry-submit', id="submit-btn", value="new-entry-submit") }}
+            </form>
+            <div id="new-entry">
+                <button id="new-entry-button" class="" onclick="newEntry()"><i class="fas fa-plus"></i></button>
+                <h5 id="new-entry-title">Page</h5>
+            </div>
+        </div>
+
+        <div class="" id='select-minimise-view' style='display: none;'>
+                <button id="expand-select-button" class="" onclick="minimiseSelect()"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div id="entry-input" class="col-4 col-md-8">
+            <form method="POST" novalidate>
+            {{ entry_details.hidden_tag() }}
+            <div>
+                {{ entry_details.entry_name(class_='entry-title', value=entry_title) }}
+                {{ entry_details.submit(class_='entry-update-button', id="submit-btn", value="Save") }}
+                <span class="entry-last-mod">{{ entry_last_mod }}</span>
+            </div>
+            <div id="div-entry-content">
+                {{ entry_details.entry_content(class_="entry-content") }}
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

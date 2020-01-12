@@ -1,0 +1,64 @@
+{% include "base.html" %}
+{% include "navbar.html" %}
+
+<div class="row">
+    <div id="signup-image">
+        <div id="signup-content" class="row">
+            <div class="col-1 col-md-1"></div>
+            <div class="quote-signup quote-signup-disappear col-md-4">
+                    <h1>"It is not enough to be busy...<br>the questions is,<br>what are we busy about?"</h1>
+            </div>
+            <div class="col-1 signup-grid-respace col-md-1"></div>
+            <div id="signup-form" class="col-8 col-md-4">
+
+                <h3>Sign Up</h3>
+              <!-- Flask form entry -->
+                <form action="" method="POST" novalidate>
+                    <!-- automatically stops CSRF attacks when combined with the config SECRET_KEY -->
+                    {{ form.hidden_tag() }}
+
+                    <span><p class="form-error-message">{{ error }}</p></span>
+
+                    {{ form.username(class_='text-input', placeholder="username") }}
+                    {% for error in form.username.errors %}
+                    <span><p class="form-error-message">username is required</p></span>
+                    {% endfor %}
+
+                    {{ form.firstName(class_='text-input', placeholder="firstname") }}
+                    {% for error in form.firstName.errors %}
+                    <span><p class="form-error-message">firstname is required</p></span>
+                    {% endfor %}
+
+                    {{ form.surname(class_='text-input', placeholder="surname") }}
+                    {% for error in form.firstName.errors %}
+                    <span><p class="form-error-message">surname is required</p></span>
+                    {% endfor %}
+
+                    {{ form.email(class_='text-input', placeholder="email") }}
+                    {% for error in form.firstName.errors %}
+                    <span><p class="form-error-message">email is required</p></span>
+                    {% endfor %}
+
+                    {{ form.password1(class_='text-input', placeholder="password") }}
+                    {% for error in form.password1.errors %}
+                    <span><p class="form-error-message">password is required</p></span>
+                    {% endfor %}
+
+                    {{ form.password2(class_='text-input', placeholder="retype password") }}
+                    {% for error in form.password2.errors %}
+                    <span><p class="form-error-message">reenter password</p></span>
+                    {% endfor %}
+
+                    {{ form.submit(class_='submit-button', value="Create Account") }}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="signup-resize-space"></div>
+
+<div class="footer">
+    {% include "clear-footer.html" %}
+</div>
+

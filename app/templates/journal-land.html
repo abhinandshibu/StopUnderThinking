@@ -1,0 +1,39 @@
+{% include "base.html" %}
+{% include "navbar-journal-land.html" %}
+
+
+<div id="journal-land-image">
+    <div id="journal-land-content" class="row">
+        <div class="col-md-4 col-8" id="journal-picker">
+            <div id="journal-land-top">
+                <h3 id="journal-land-title">Journals</h3>
+                <button id="new-journal-button" class="float-right" onclick="newJournal()"><i class="fas fa-plus"></i></button>
+            </div>
+            {% for journal in range(journal_no) %}
+                <p class="journal-item">
+                    <a href="{{ url_for('journal', journal_id = tree[journal + 1][0][0], section_number = 1, entry_number = 0) }}"
+                       class="journal-item">{{ tree[journal + 1][0][1] }}
+                    </a>
+                </p>
+            {% endfor %}
+            <form id="new-journal-disappear" name="newJournalInput" action="" method="POST" novalidate>
+                <!-- automatically stops CSRF attacks when combined with the config SECRET_KEY -->
+                {{ form.hidden_tag() }}
+                {{ form.new_journal(class_='new-journal-input', placeholder="my journal") }}
+                {{ form.submit(class_='new-journal-submit', id="submit-btn", value="new-journal-submit") }}
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1 journal-land-temp-space"></div>
+        <div class="col-md-4 quote-journal-land-disappear">
+            <h1 id="greeting-journal-land">Hello, {{ name }}</h1>
+            <h1 id="quote-journal-land">"Your time is limited, don't waste it living somebody else's life"</h1>
+            <p id="quote-cite-journal-land"><i>Steve Jobs</i></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    {% include "clear-footer-journal-land.html" %}
+</div>

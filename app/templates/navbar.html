@@ -1,0 +1,19 @@
+<!--NAVBAR-->
+
+<div class="site-header">
+    <nav class="navbar navbar_scrolled navbar-expand-lg navbar-light nav-color fixed-top">
+      <a class="navbar-brand font-weight-bold" href="{{ url_for('landing') }}">StopUnderThinking</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-color" id="navbarNavAltMarkup">
+        <div class="navbar-nav nav-color ml-auto">
+          <a class="nav-item nav-link active" href="">Journal<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="{{ url_for('signup') }}">Signup</a>
+          <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+        </div>
+      </div>
+    </nav>
+</div>
+<!--Navbar End-->

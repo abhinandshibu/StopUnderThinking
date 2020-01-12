@@ -1,0 +1,45 @@
+{% include "base.html" %}
+{% include "navbar.html" %}
+
+<div id="login-image">
+    <div id="login-content" class="row">
+        <div class="col-1 col-md-1"></div>
+        <div class="quote-login quote-login-disappear col-md-4">
+                <h1>"It is not enough to be busy...<br>the questions is,<br>what are we busy about?"</h1>
+        </div>
+        <div class="col-1 login-grid-respace col-md-1"></div>
+        <div id="login-form" class="col-8 col-md-4">
+
+            <h3>Login</h3>
+          <!-- Flask form entry -->
+            <form action="" method="POST" novalidate>
+                <!-- automatically stops CSRF attacks when combined with the config SECRET_KEY -->
+                {{ form.hidden_tag() }}
+
+                <span><p class="form-error-message">{{ error }}</p></span>
+
+                {{ form.usernameEmail(class_='text-input', placeholder="username/email") }}
+                {% for error in form.usernameEmail.errors %}
+                <span><p class="form-error-message">username or email is required</p></span>
+                {% endfor %}
+
+                {{ form.password(class_='text-input', placeholder="password") }}
+                {% for error in form.password.errors %}
+                <span><p class="form-error-message">password is required</p></span>
+                {% endfor %}
+
+
+                <div class="remember-me">
+                    {{ form.remember_me(class_='checkbox')}} {{ form.remember_me.label(class_='remember-me-label')}}
+
+                    {{ form.submit(class_='submit-button', value="Login") }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    {% include "clear-footer.html" %}
+</div>
+
