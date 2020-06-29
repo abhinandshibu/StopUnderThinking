@@ -12,7 +12,10 @@ There are many incredible note taking applications such as Notion and OneNote, w
 
 ## Technologies Used
 
+This web application has been created using a flask backend, with the dynamic rendering implemented using Jinja 2. The database transactions were handled using the object relational mapper, SQL Alchemy. 
 Stored robustly hashed and salted for security
+
+Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
 
 ## Limitations and future improvements
 
