@@ -2,6 +2,13 @@
 
 A web application for journaling and note-taking.
 
+## Contents
+Purpose
+Features
+Technologies
+Limitations and future improvements
+License
+
 ## Purpose
 
 StopUnderThinking digitises the process of note-taking and journaling, to allow personal notes to accessible anywhere with a device and an internet connection. In addition, the data is stored more robustly than paper which can be lost and damaged easily.
@@ -10,10 +17,17 @@ There are many incredible note taking applications such as Notion and OneNote, w
 
 ## Features
 
-## Technologies Used
+Landing
+Sign Up
+Login
+Journal Landing
+Journal
 
-This web application has been created using a flask backend, with the dynamic rendering implemented using Jinja 2. The database transactions were handled using the object relational mapper, SQL Alchemy. The bootstrap CSS framework was used to simplify the process of creating responsive web design.
+## Technologies
 
+This web application has been created using a flask backend, with the dynamic rendering implemented using Jinja2. The database transactions were handled using the object relational mapper, SQL Alchemy. The bootstrap CSS framework was used to simplify the process of creating responsive web design.
+
+Tree data structures were used to store and call upon data when the users session were active. Passwords are also stored securely in the database through the use of hashing with SHA512 and salt generated with UUID4. 
 
 Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
 
