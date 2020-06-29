@@ -3,11 +3,11 @@
 A web application for journaling and note-taking.
 
 ## Contents
-Purpose
-Features
-Technologies
-Limitations and future improvements
-License
+* [Purpose](#purpose)
+* [Features](#features)
+* [Technologies](#technologies)
+* [Limitations and future improvements](#limitations-and-future-improvements)
+* [License](#license)
 
 ## Purpose
 
@@ -32,6 +32,8 @@ Tree data structures were used to store and call upon data when the users sessio
 Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
 
 ## Limitations and future improvements
+
+## Setup
 
 ## License
 
