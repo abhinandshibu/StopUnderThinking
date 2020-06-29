@@ -6,6 +6,7 @@ A web application for journaling and note-taking.
 * [Purpose](#purpose)
 * [Features](#features)
 * [Technologies](#technologies)
+* [Setup](#setup)
 * [Limitations and future improvements](#limitations-and-future-improvements)
 * [License](#license)
 
@@ -25,15 +26,18 @@ Journal
 
 ## Technologies
 
-This web application has been created using a flask backend, with the dynamic rendering implemented using Jinja2. The database transactions were handled using the object relational mapper, SQL Alchemy. The bootstrap CSS framework was used to simplify the process of creating responsive web design.
+This web application has been created using a python 3.6 flask backend, with the dynamic rendering implemented using Jinja2. The database transactions were handled using the object relational mapper, SQL Alchemy. The bootstrap 4.0 CSS framework was used to simplify the process of creating responsive web design. More version details can be found in requirements.txt
 
 Tree data structures were used to store and call upon data when the users session were active. Passwords are also stored securely in the database through the use of hashing with SHA512 and salt generated with UUID4. 
 
 Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
 
+## Setup
+
+To run this project, install it locally.
+
 ## Limitations and future improvements
 
-## Setup
 
 ## License
 
