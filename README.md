@@ -26,7 +26,24 @@ Automated testing was used to repeatedly check for vulnerabilities during the de
 
 ## Setup
 
-To run this project, install it locally.
+### Mac OS example
+
+#### Clone the repository
+```
+git clone https://github.com/abhinandshibu/StopUnderThinking.git
+```
+
+#### Create a virtual environment and install the requirements
+```
+python3 -m venv venv
+. venv/bin/activate
+pip install requirements.txt
+```
+
+#### Run it
+```
+python3 stopunderthinking.py
+```
 
 ## Limitations and future improvements
 
