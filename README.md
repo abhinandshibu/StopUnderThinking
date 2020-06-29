@@ -68,7 +68,7 @@ Some screenshots have a few pixels shaved off the right hand side and the bottom
 
 ### Responsive
 
-StopUnderThinking is a fully responsive web application in order to increase accessibility. Examples of the responsive design are the phone view of the journal landing page and the tablet view of the login page shown below.
+StopUnderThinking is a fully responsive web application in order to increase accessibility. The phone view of the journal landing page and the tablet view of the login page shown below are examples of the responsiveness.
 
 <img src="/images/journal-land-phone.png">
 
