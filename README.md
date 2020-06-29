@@ -18,6 +18,6 @@ Stored robustly hashed and salted for security
 
 ## License
 
-Copyright (c) 2020 Abhinand Shibu
+Copyright © 2020 Abhinand Shibu
 
 This project is licensed under the [MIT License](License).
