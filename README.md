@@ -47,7 +47,7 @@ python3 stopunderthinking.py
 
 ## Limitations and future improvements
 
-Some screenshots have a few pixels shaved off the right hand side, making the positioning look uneven.
+Some screenshots have a few pixels shaved off the right hand side and the bottom, making the positioning look uneven.
 
 ## Features
 
