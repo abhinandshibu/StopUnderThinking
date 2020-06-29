@@ -30,6 +30,7 @@ To run this project, install it locally.
 
 ## Limitations and future improvements
 
+Some screenshots have a few pixels shaved off the right hand side, making the positioning look uneven.
 
 ## Features
 
