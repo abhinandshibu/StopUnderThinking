@@ -20,4 +20,4 @@ Stored robustly hashed and salted for security
 
 Copyright (c) 2020 Abhinand Shibu
 
-Licensed under the [MIT License](License).
+This project is licensed under the [MIT License](License).
