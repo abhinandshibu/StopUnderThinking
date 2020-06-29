@@ -35,7 +35,7 @@ There are many incredible note taking applications such as Notion and OneNote, w
 
 ### Responsive
 
-
+StopUnderThinking is a fully responsive web application in order to increase accessibility. Below are the phone view of the journal landing and the tablet view of 
 
 ## Technologies
 
