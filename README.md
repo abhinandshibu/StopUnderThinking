@@ -19,19 +19,19 @@ There are many incredible note taking applications such as Notion and OneNote, w
 ## Features
 
 ### Landing
-<img src="/photos/landing.png"></img>
+<img src="/photos/landing.png">
 
 ### Sign Up
-<img src="/photos/signup.png"></img>
+<img src="/photos/signup.png">
 
 ### Login
-<img src="/photos/login.png"></img>
+<img src="/photos/login.png">
 
 ### Journal Landing
-<img src="/photos/journal-landing.png"></img>
+<img src="/photos/journal-landing.png">
 
 ### Journal
-<img src="/photos/journal.png"></img>
+<img src="/photos/journal.png">
 
 ### Responsive
 
