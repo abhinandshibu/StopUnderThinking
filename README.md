@@ -38,11 +38,16 @@ Automated testing was used to repeatedly check for vulnerabilities during the de
 git clone https://github.com/abhinandshibu/StopUnderThinking.git
 ```
 
+#### Navigate into the directory of the repository
+```
+cd AntiGram
+```
+
 #### Create a virtual environment and install the requirements
 ```
 python3 -m venv venv
 . venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 #### Run it
