@@ -40,7 +40,7 @@ git clone https://github.com/abhinandshibu/StopUnderThinking.git
 
 #### Navigate into the directory of the repository
 ```
-cd AntiGram
+cd StopUnderThinking/
 ```
 
 #### Create a virtual environment and install the requirements
