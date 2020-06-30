@@ -49,10 +49,15 @@ python3 stopunderthinking.py
 
 The main selling point, the simplicity of the web application, is also the main limitation. Although the simplicity makes the software more accessible, it limits the capability and features of the software. Though, improvements can still be made to make the software more accesible and capable, without negatively impacting one another.
 
+Future improvements could include:
+
 * Remember me button
 * Email authentication
 * Password resetting
-* 
+* Collaboration capabilities
+* Embed images
+* Multiple colours for text
+* Bold and italic
 
 ## Pages
 
