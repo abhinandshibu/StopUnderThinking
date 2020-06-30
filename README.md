@@ -7,7 +7,12 @@ A web application for journaling and note-taking.
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Limitations and future improvements](#limitations-and-future-improvements)
-* [Features](#features)
+* [Pages](#pages)
+⋅⋅* [Landing](#landing)
+⋅⋅* [Signup](#signup)
+⋅⋅* [Journal Landing](#journal-landing)
+⋅⋅* [Journal](#journal)
+⋅⋅* [Responsive Design](#responsive-design)
 * [License](#license)
 
 ## Purpose
@@ -78,7 +83,7 @@ Some screenshots have a few pixels shaved off the right hand side and the bottom
 ### Journal
 <img src="/images/journal.png">
 
-### Responsive
+### Responsive Design
 
 StopUnderThinking is a fully responsive web application in order to increase accessibility. The phone view of the journal landing page and the tablet view of the login page shown below are examples of the responsiveness.
 
