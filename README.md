@@ -8,11 +8,11 @@ A web application for journaling and note-taking.
 * [Setup](#setup)
 * [Limitations and future improvements](#limitations-and-future-improvements)
 * [Pages](#pages)
-⋅⋅* [Landing](#landing)
-⋅⋅* [Signup](#signup)
-⋅⋅* [Journal Landing](#journal-landing)
-⋅⋅* [Journal](#journal)
-⋅⋅* [Responsive Design](#responsive-design)
+  * [Landing](#landing)
+  * [Signup](#signup)
+  * [Journal Landing](#journal-landing)
+  * [Journal](#journal)
+  * [Responsive Design](#responsive-design)
 * [License](#license)
 
 ## Purpose
