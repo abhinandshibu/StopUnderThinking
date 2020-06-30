@@ -27,7 +27,7 @@ This web application has been created using a python 3.6 flask backend, with the
 
 Tree data structures were used to store and call upon data when the users session were active. Passwords are also stored securely in the database through the use of hashing with SHA512 and salt generated with UUID4. 
 
-Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
+Automated testing was used to repeatedly check for vulnerabilities during the development cycle, unfortunately I cannot find these tests to upload on GitHub. Exploratory testing was used to test the functionality of the software. Robustness testing such as inputting extreme data, boundary data, SQL injection was carried out to ensure security. Usability testing was carried out to primarily improve the accessibility and ease of use of the software. I still have the test tables, feel free to reach out to me if you would like to see them.
 
 The creation of the styling was greatly aided using the bootstrap 4.0 CSS framework, though the styling was still built from scratch and not a copied template.
 
