@@ -9,7 +9,7 @@ A web application for journaling and note-taking.
 * [Limitations and future improvements](#limitations-and-future-improvements)
 * [Pages](#pages)
   * [Landing](#landing)
-  * [Signup](#signup)
+  * [Sign Up](#sign-up)
   * [Journal Landing](#journal-landing)
   * [Journal](#journal)
   * [Responsive Design](#responsive-design)
@@ -102,4 +102,4 @@ StopUnderThinking is a fully responsive web application in order to increase acc
 
 Copyright © 2020 Abhinand Shibu
 
-This project is licensed under the [MIT License](License).
+This project is licensed under the [MIT License](/License).
