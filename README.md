@@ -47,9 +47,16 @@ python3 stopunderthinking.py
 
 ## Limitations and future improvements
 
-Some screenshots have a few pixels shaved off the right hand side and the bottom, making the positioning look uneven.
+The main selling point, the simplicity of the web application, is also the main limitation. Although the simplicity makes the software more accessible, it limits the capability and features of the software. Though, improvements can still be made to make the software more accesible and capable, without negatively impacting one another.
 
-## Features
+* Remember me button
+* Email authentication
+* Password resetting
+* 
+
+## Pages
+
+Some screenshots have a few pixels shaved off the right hand side and the bottom, making the positioning look uneven.
 
 ### Landing
 <img src="/images/landing.png">
