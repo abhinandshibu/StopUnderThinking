@@ -102,4 +102,4 @@ StopUnderThinking is a fully responsive web application in order to increase acc
 
 Copyright © 2020 Abhinand Shibu
 
-This project is licensed under the [MIT License](/License).
+This project is licensed under the [MIT License](../License).
